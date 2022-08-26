@@ -15,7 +15,7 @@ const fetch = async (method, properties) => {
    * Filter out records without an actual "Account ID".
    */
   return records.filter((i) => i.properties.ub_app_feedbackcore_aid);
-}
+};
 
 const run = async () => {
   const contacts = await fetch('contacts', ['email', 'firstname', 'lastname', 'ub_app_feedbackcore_aid']);
